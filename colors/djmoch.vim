@@ -2,7 +2,7 @@
 " Author:      Daniel Moch (daniel@danielmoch.com)
 " Webpage:     https://git.danielmoch.com/vim-djmoch
 " Description: My personal color schemee
-" Last Change: 2019-09-01
+" Last Change: 2019-09-02
 
 hi clear
 
@@ -70,7 +70,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Question ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
     hi Cursor ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi CursorColumn ctermbg=100 ctermfg=15 cterm=NONE guibg=#878700 guifg=#ffffff gui=NONE
-    hi QuickFixLine ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
     hi Conceal ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
     hi ToolbarLine ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
     hi ToolbarButton ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
@@ -137,7 +136,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Question ctermbg=white ctermfg=black cterm=NONE
     hi Cursor ctermbg=black ctermfg=white cterm=NONE
     hi CursorColumn ctermbg=darkyellow ctermfg=white cterm=NONE
-    hi QuickFixLine ctermbg=white ctermfg=black cterm=NONE
     hi Conceal ctermbg=white ctermfg=black cterm=NONE
     hi ToolbarLine ctermbg=white ctermfg=black cterm=NONE
     hi ToolbarButton ctermbg=white ctermfg=black cterm=NONE
@@ -151,6 +149,7 @@ hi link StatusLineTermNC StatusLineNC
 hi link VisualNOS Visual
 hi link WarningMsg Error
 hi link CursorIM Cursor
+hi link QuickFixLine CursorLine
 hi link Terminal Normal
 
 let g:terminal_ansi_colors = [
