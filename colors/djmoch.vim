@@ -2,7 +2,7 @@
 " Author:      Daniel Moch (daniel@danielmoch.com)
 " Webpage:     https://git.danielmoch.com/vim-djmoch
 " Description: My personal color schemee
-" Last Change: 2019-09-02
+" Last Change: 2019-09-05
 
 hi clear
 
@@ -30,7 +30,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Error ctermbg=88 ctermfg=15 cterm=NONE guibg=#870000 guifg=#ffffff gui=NONE
     hi Todo ctermbg=15 ctermfg=0 cterm=reverse guibg=#ffffff guifg=#000000 gui=reverse
     hi StatusLine ctermbg=25 ctermfg=15 cterm=NONE guibg=#005faf guifg=#ffffff gui=NONE
-    hi StatusLineNC ctermbg=250 ctermfg=15 cterm=NONE guibg=#bcbcbc guifg=#ffffff gui=NONE
+    hi StatusLineNC ctermbg=237 ctermfg=75 cterm=NONE guibg=#3a3a3a guifg=#5fafff gui=NONE
     hi VertSplit ctermbg=15 ctermfg=250 cterm=NONE guibg=#ffffff guifg=#bcbcbc gui=NONE
     hi TabLine ctermbg=250 ctermfg=15 cterm=NONE guibg=#bcbcbc guifg=#ffffff gui=NONE
     hi TabLineFill ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
@@ -96,7 +96,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Error ctermbg=darkred ctermfg=white cterm=NONE
     hi Todo ctermbg=white ctermfg=black cterm=reverse
     hi StatusLine ctermbg=darkblue ctermfg=white cterm=NONE
-    hi StatusLineNC ctermbg=gray ctermfg=white cterm=NONE
+    hi StatusLineNC ctermbg=darkgray ctermfg=blue cterm=NONE
     hi VertSplit ctermbg=white ctermfg=gray cterm=NONE
     hi TabLine ctermbg=gray ctermfg=white cterm=NONE
     hi TabLineFill ctermbg=white ctermfg=black cterm=NONE
