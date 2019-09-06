@@ -2,7 +2,7 @@
 " Author:      Daniel Moch (daniel@danielmoch.com)
 " Webpage:     https://git.danielmoch.com/vim-djmoch
 " Description: My personal color schemee
-" Last Change: 2019-09-05
+" Last Change: 2019-09-06
 
 hi clear
 
@@ -55,7 +55,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffDelete ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
     hi DiffText ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
     hi IncSearch ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
-    hi Search ctermbg=227 ctermfg=0 cterm=NONE guibg=#ffff5f guifg=#000000 gui=NONE
+    hi Search ctermbg=186 ctermfg=0 cterm=NONE guibg=#D7D787 guifg=#000000 gui=NONE
     hi Directory ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
     hi MatchParen ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi SpellBad ctermbg=88 ctermfg=15 cterm=NONE guibg=#870000 guifg=#ffffff gui=NONE
@@ -163,8 +163,8 @@ let g:terminal_ansi_colors = [
         \ '#bcbcbc',
         \ '#3a3a3a',
         \ '#d7005f',
-        \ '#87ff00',
-        \ '#ffff5f',
+        \ '#00D75F',
+        \ '#D7D787',
         \ '#5fafff',
         \ '#d787ff',
         \ '#87ff87',
