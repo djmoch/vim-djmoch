@@ -2,7 +2,7 @@
 " Author:      Daniel Moch (daniel@danielmoch.com)
 " Webpage:     https://git.danielmoch.com/vim-djmoch
 " Description: My personal color schemee
-" Last Change: 2019-09-06
+" Last Change: 2019-09-14
 
 hi clear
 
@@ -57,7 +57,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi IncSearch ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi Search ctermbg=186 ctermfg=0 cterm=NONE guibg=#D7D787 guifg=#000000 gui=NONE
     hi Directory ctermbg=15 ctermfg=0 cterm=NONE guibg=#ffffff guifg=#000000 gui=NONE
-    hi MatchParen ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
+    hi MatchParen ctermbg=250 ctermfg=15 cterm=NONE guibg=#bcbcbc guifg=#ffffff gui=NONE
     hi SpellBad ctermbg=88 ctermfg=15 cterm=NONE guibg=#870000 guifg=#ffffff gui=NONE
     hi SpellCap ctermbg=15 ctermfg=88 cterm=undercurl guibg=#ffffff guifg=#870000 gui=undercurl guisp=#870000
     hi SpellLocal ctermbg=15 ctermfg=100 cterm=undercurl guibg=#ffffff guifg=#878700 gui=undercurl guisp=#878700
@@ -123,7 +123,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi IncSearch ctermbg=black ctermfg=white cterm=NONE
     hi Search ctermbg=yellow ctermfg=black cterm=NONE
     hi Directory ctermbg=white ctermfg=black cterm=NONE
-    hi MatchParen ctermbg=black ctermfg=white cterm=NONE
+    hi MatchParen ctermbg=gray ctermfg=white cterm=NONE
     hi SpellBad ctermbg=darkred ctermfg=white cterm=NONE
     hi SpellCap ctermbg=white ctermfg=darkred cterm=undercurl
     hi SpellLocal ctermbg=white ctermfg=darkyellow cterm=undercurl
