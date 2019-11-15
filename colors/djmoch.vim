@@ -79,68 +79,68 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi Normal ctermbg=white ctermfg=black cterm=NONE
+    hi Normal ctermbg=black ctermfg=gray cterm=NONE
 
-    set background=light
+    set background=dark
 
-    hi NonText ctermbg=white ctermfg=darkblue cterm=NONE
-    hi Comment ctermbg=white ctermfg=darkgreen cterm=NONE
-    hi Constant ctermbg=white ctermfg=darkred cterm=NONE
-    hi Identifier ctermbg=white ctermfg=black cterm=NONE
-    hi Statement ctermbg=white ctermfg=darkblue cterm=NONE
-    hi PreProc ctermbg=white ctermfg=darkmagenta cterm=NONE
-    hi Type ctermbg=white ctermfg=darkmagenta cterm=NONE
-    hi Special ctermbg=white ctermfg=darkgreen cterm=NONE
-    hi Underlined ctermbg=white ctermfg=black cterm=undercurl
-    hi Ignore ctermbg=white ctermfg=gray cterm=NONE
+    hi NonText ctermbg=black ctermfg=darkblue cterm=NONE
+    hi Comment ctermbg=black ctermfg=darkgreen cterm=NONE
+    hi Constant ctermbg=black ctermfg=darkred cterm=NONE
+    hi Identifier ctermbg=black ctermfg=gray cterm=NONE
+    hi Statement ctermbg=black ctermfg=darkblue cterm=NONE
+    hi PreProc ctermbg=black ctermfg=darkmagenta cterm=NONE
+    hi Type ctermbg=black ctermfg=darkmagenta cterm=NONE
+    hi Special ctermbg=black ctermfg=darkgreen cterm=NONE
+    hi Underlined ctermbg=black ctermfg=gray cterm=undercurl
+    hi Ignore ctermbg=black ctermfg=gray cterm=NONE
     hi Error ctermbg=darkred ctermfg=white cterm=NONE
-    hi Todo ctermbg=white ctermfg=black cterm=reverse
-    hi StatusLine ctermbg=darkblue ctermfg=white cterm=NONE
+    hi Todo ctermbg=black ctermfg=gray cterm=reverse
+    hi StatusLine ctermbg=darkblue ctermfg=gray cterm=NONE
     hi StatusLineNC ctermbg=darkgray ctermfg=blue cterm=NONE
-    hi VertSplit ctermbg=white ctermfg=gray cterm=NONE
+    hi VertSplit ctermbg=black ctermfg=gray cterm=NONE
     hi TabLine ctermbg=gray ctermfg=white cterm=NONE
-    hi TabLineFill ctermbg=white ctermfg=black cterm=NONE
+    hi TabLineFill ctermbg=black ctermfg=gray cterm=NONE
     hi TabLineSel ctermbg=darkblue ctermfg=white cterm=NONE
-    hi Title ctermbg=white ctermfg=darkblue cterm=NONE
+    hi Title ctermbg=black ctermfg=darkblue cterm=NONE
     hi CursorLine ctermbg=gray ctermfg=black cterm=NONE
-    hi LineNr ctermbg=gray ctermfg=black cterm=NONE
+    hi LineNr ctermbg=black ctermfg=gray cterm=undercurl
     hi CursorLineNr ctermbg=gray ctermfg=darkblue cterm=NONE
-    hi helpLeadBlank ctermbg=white ctermfg=black cterm=NONE
-    hi helpNormal ctermbg=white ctermfg=black cterm=NONE
+    hi helpLeadBlank ctermbg=black ctermfg=gray cterm=NONE
+    hi helpNormal ctermbg=black ctermfg=gray cterm=NONE
     hi Visual ctermbg=gray ctermfg=black cterm=NONE
-    hi Pmenu ctermbg=white ctermfg=black cterm=NONE
-    hi PmenuSbar ctermbg=white ctermfg=black cterm=NONE
-    hi PmenuSel ctermbg=white ctermfg=black cterm=NONE
-    hi PmenuThumb ctermbg=white ctermfg=black cterm=NONE
-    hi FoldColumn ctermbg=white ctermfg=black cterm=NONE
+    hi Pmenu ctermbg=black ctermfg=gray cterm=NONE
+    hi PmenuSbar ctermbg=black ctermfg=gray cterm=NONE
+    hi PmenuSel ctermbg=black ctermfg=gray cterm=NONE
+    hi PmenuThumb ctermbg=black ctermfg=gray cterm=NONE
+    hi FoldColumn ctermbg=black ctermfg=gray cterm=NONE
     hi Folded ctermbg=gray ctermfg=white cterm=NONE
     hi WildMenu ctermbg=gray ctermfg=black cterm=NONE
-    hi SpecialKey ctermbg=white ctermfg=darkyellow cterm=NONE
-    hi DiffAdd ctermbg=white ctermfg=black cterm=NONE
-    hi DiffChange ctermbg=white ctermfg=black cterm=NONE
-    hi DiffDelete ctermbg=white ctermfg=black cterm=NONE
-    hi DiffText ctermbg=white ctermfg=black cterm=NONE
+    hi SpecialKey ctermbg=black ctermfg=darkyellow cterm=NONE
+    hi DiffAdd ctermbg=black ctermfg=gray cterm=NONE
+    hi DiffChange ctermbg=black ctermfg=gray cterm=NONE
+    hi DiffDelete ctermbg=black ctermfg=gray cterm=NONE
+    hi DiffText ctermbg=black ctermfg=gray cterm=NONE
     hi IncSearch ctermbg=black ctermfg=white cterm=NONE
-    hi Search ctermbg=yellow ctermfg=black cterm=NONE
-    hi Directory ctermbg=white ctermfg=black cterm=NONE
+    hi Search ctermbg=yellow ctermfg=gray cterm=NONE
+    hi Directory ctermbg=black ctermfg=gray cterm=NONE
     hi MatchParen ctermbg=gray ctermfg=white cterm=NONE
     hi SpellBad ctermbg=darkred ctermfg=white cterm=NONE
-    hi SpellCap ctermbg=white ctermfg=darkred cterm=undercurl
-    hi SpellLocal ctermbg=white ctermfg=darkyellow cterm=undercurl
-    hi SpellRare ctermbg=white ctermfg=darkgreen cterm=undercurl
+    hi SpellCap ctermbg=black ctermfg=darkred cterm=undercurl
+    hi SpellLocal ctermbg=black ctermfg=darkyellow cterm=undercurl
+    hi SpellRare ctermbg=black ctermfg=darkgreen cterm=undercurl
     hi ColorColumn ctermbg=black ctermfg=white cterm=NONE
-    hi SignColumn ctermbg=white ctermfg=black cterm=NONE
+    hi SignColumn ctermbg=black ctermfg=gray cterm=NONE
     hi ErrorMsg ctermbg=darkred ctermfg=white cterm=NONE
-    hi ModeMsg ctermbg=white ctermfg=darkgreen cterm=NONE
-    hi MoreMsg ctermbg=white ctermfg=darkgreen cterm=NONE
-    hi Question ctermbg=white ctermfg=black cterm=NONE
+    hi ModeMsg ctermbg=black ctermfg=darkgreen cterm=NONE
+    hi MoreMsg ctermbg=black ctermfg=darkgreen cterm=NONE
+    hi Question ctermbg=black ctermfg=gray cterm=NONE
     hi Cursor ctermbg=black ctermfg=white cterm=NONE
     hi CursorColumn ctermbg=darkyellow ctermfg=white cterm=NONE
-    hi Conceal ctermbg=white ctermfg=black cterm=NONE
-    hi ToolbarLine ctermbg=white ctermfg=black cterm=NONE
-    hi ToolbarButton ctermbg=white ctermfg=black cterm=NONE
-    hi debugPC ctermbg=white ctermfg=black cterm=NONE
-    hi debugBreakpoint ctermbg=white ctermfg=black cterm=NONE
+    hi Conceal ctermbg=black ctermfg=gray cterm=NONE
+    hi ToolbarLine ctermbg=black ctermfg=gray cterm=NONE
+    hi ToolbarButton ctermbg=black ctermfg=gray cterm=NONE
+    hi debugPC ctermbg=black ctermfg=gray cterm=NONE
+    hi debugBreakpoint ctermbg=black ctermfg=gray cterm=NONE
 endif
 
 hi link EndOfBuffer NonText
